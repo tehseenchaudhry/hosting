@@ -14,7 +14,6 @@ const Footer = () => {
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-16">
 
-        {/* Contact */}
         <div>
           <p className="text-lg mb-3">Any questions ?</p>
           <h2 className="text-3xl font-bold mb-12">
