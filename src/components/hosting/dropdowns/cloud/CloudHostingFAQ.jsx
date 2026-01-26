@@ -22,7 +22,6 @@ const CloudHostingFAQ = () => {
     <section className="bg-white py-28">
       <div className="max-w-[1400px] mx-auto px-6 lg:px-16">
 
-        {/* TITLE */}
         <h2
           className="text-center text-3xl md:text-4xl font-extrabold text-[#020c2b] mb-20"
           data-aos="fade-up"
