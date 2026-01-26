@@ -17,6 +17,11 @@ import Genious from "./pages/Genious";
 import Google from "./pages/Google";
 import Micro from "./pages/Micro";
 import Anti from "./pages/Anti";
+import Ssl from "./pages/Ssl";
+import Sectigo from "./pages/Sectigo";
+import Digicert from "./pages/Digicert";
+import GeoTrust from "./pages/GeoTrust";
+import Thawte from "./pages/Thawte";
 // import Home from "./pages/Home"; // optional if you create later
 
 function App() {
@@ -46,6 +51,16 @@ function App() {
           <Route path="mail-solutions/google-workspace" element={<Google />} />
           <Route path="mail-solutions/microsoft-365" element={<Micro />} />
           <Route path="mail-solutions/anti-spam" element={<Anti />} />
+          <Route path="/ssl" element={<Ssl />} />
+          <Route path="/ssl/sectigo" element={<Sectigo />} />
+          <Route path="/ssl/digicert" element={<Digicert />} />
+          <Route path="/ssl/geotrust" element={<GeoTrust />} />
+          <Route path="/ssl/thawte" element={<Thawte />} />
+          
+
+
+
+
 
 
 
