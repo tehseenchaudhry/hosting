@@ -5,7 +5,6 @@ export default function SSLBottomCTA() {
     <section className="bg-white py-24">
       <div className="max-w-6xl mx-auto px-6 text-center">
 
-        {/* TITLE */}
         <h2 className="text-2xl md:text-3xl font-bold text-[#061a3a]">
           Do you have more questions about this product?
         </h2>
@@ -13,7 +12,6 @@ export default function SSLBottomCTA() {
         {/* OPTIONS */}
         <div className="mt-14 grid sm:grid-cols-2 gap-10">
 
-          {/* KNOWLEDGE BASE */}
           <div className="flex flex-col items-center">
             <div
               className="
