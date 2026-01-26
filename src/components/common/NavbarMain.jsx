@@ -1,49 +1,113 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
+
 import HostingDropDown from "./NavbarMain/HostingDropDown";
-// import HostingDropDown from "../hosting/HostingDropDown";
+import MailSolutionsDropDown from "./NavbarMain/MailSolutionsDropDown";
+import DomainNamesDropDown from "./NavbarMain/DomainNamesDropDown ";
+import SSLDropDown from "./NavbarMain/SSLDropDown";
+import ManagedServicesDropDown from "./NavbarMain/ManagedServicesDropDown";
+import CompanyDropDown from "./NavbarMain/CompanyDropDown"; // ✅ ADD THIS
 
 const NavbarMain = () => {
-  const [showHosting, setShowHosting] = useState(false);
+  const [openMenu, setOpenMenu] = useState(null);
+  const navigate = useNavigate();
+
+  const handleDomainClick = () => {
+    navigate("/domain-names");
+    setOpenMenu(null);
+  };
 
   return (
-    <div className="bg-white shadow-sm relative z-50">
-      <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+    <header className="relative z-[1000]">
+      <div className="bg-white border-b">
+        <div className="max-w-[1440px] mx-auto px-10 h-20 flex items-center justify-between">
 
-        {/* Logo */}
-        <Link to="/" className="flex items-center gap-2">
-          <img src="logo.png" alt="Genious" className="h-10" />
-        </Link>
+          {/* LOGO */}
+          <Link to="/" className="flex items-center">
+            <img src="/logo.png" alt="Genious" className="h-9" />
+          </Link>
 
-        {/* Menu */}
-        <nav className="flex items-center gap-10 text-[#020c2b] font-semibold">
-          
-          {/* HOSTING (Hover Trigger) */}
-          <div
-            className="relative"
-            onMouseEnter={() => setShowHosting(true)}
-            onMouseLeave={() => setShowHosting(false)}
-          >
-            <Link className="hover:border-b-2 pb-1" to="">
+          {/* NAV */}
+          <nav className="flex gap-12 font-semibold text-[#020c2b]">
+
+            <Link
+              to="/hosting"
+              onMouseEnter={() => setOpenMenu("hosting")}
+            >
               Hosting
             </Link>
 
-            {/* Dropdown */}
-            {showHosting && (
-              <div className="absolute top-8   right-[-660px] w-screen">
-                <HostingDropDown />
-              </div>
-            )}
-          </div>
+            <button
+              onMouseEnter={() => setOpenMenu("domains")}
+              onClick={handleDomainClick}
+            >
+              Domain names
+            </button>
 
-          <Link className="hover:border-b-2" to="">Domain names</Link>
-          <Link className="hover:border-b-2" to="">Mail solutions</Link>
-          <Link className="hover:border-b-2" to="">SSL</Link>
-          <Link className="hover:border-b-2" to="">Managed Services</Link>
-          <Link className="hover:border-b-2" to="">Company</Link>
-        </nav>
+            <Link
+              to="/mail-solutions"
+              onMouseEnter={() => setOpenMenu("mail")}
+            >
+              Mail solutions
+            </Link>
+
+            <button onMouseEnter={() => setOpenMenu("ssl")}>
+              SSL
+            </button>
+
+            <button onMouseEnter={() => setOpenMenu("managed")}>
+              Managed Services
+            </button>
+
+            {/* ✅ Company dropdown trigger */}
+            <button onMouseEnter={() => setOpenMenu("company")}>
+              Company
+            </button>
+
+          </nav>
+        </div>
       </div>
-    </div>
+
+      {/* DROPDOWNS */}
+
+      {openMenu === "hosting" && (
+        <div onMouseLeave={() => setOpenMenu(null)} className="absolute w-full">
+          <HostingDropDown />
+        </div>
+      )}
+
+      {openMenu === "domains" && (
+        <div onMouseLeave={() => setOpenMenu(null)} className="absolute w-full">
+          <DomainNamesDropDown />
+        </div>
+      )}
+
+      {openMenu === "mail" && (
+        <div onMouseLeave={() => setOpenMenu(null)} className="absolute w-full">
+          <MailSolutionsDropDown />
+        </div>
+      )}
+
+      {openMenu === "ssl" && (
+        <div onMouseLeave={() => setOpenMenu(null)} className="absolute w-full">
+          <SSLDropDown />
+        </div>
+      )}
+
+      {openMenu === "managed" && (
+        <div onMouseLeave={() => setOpenMenu(null)} className="absolute w-full">
+          <ManagedServicesDropDown />
+        </div>
+      )}
+
+      {/* ✅ Company dropdown */}
+      {openMenu === "company" && (
+        <div onMouseLeave={() => setOpenMenu(null)} className="absolute w-full">
+          <CompanyDropDown />
+        </div>
+      )}
+
+    </header>
   );
 };
 
