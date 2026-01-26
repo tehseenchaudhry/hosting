@@ -441,4 +441,4 @@ const HostingHeroSection = () => {
   );
 };
 
-export default HostingHero;
+export default HostingHeroSection;
