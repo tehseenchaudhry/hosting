@@ -17,7 +17,7 @@ const services = [
       "Host your sensitive data on a secure Moroccan cloud, compliant with CNDP laws, guaranteeing digital sovereignty, legal compliance and high availability through a local datacenter.",
     price: "209 Dhs ex.VAT",
     linkText: "Host in Morocco",
-    link: "https://www.genious.net/en/hosting/hosting-morocco",
+    link: "",
     icon: <SiBisecthosting  />,
   },
   {
@@ -26,7 +26,7 @@ const services = [
       "Since online messaging is the main communication channel today, we provide you with a complete suite of advanced email and online collaboration tools.",
     price: "21 Dhs ex.VAT",
     linkText: "See offers",
-    link: "https://www.genious.net/en/mail-solutions",
+    link: "",
     icon: <FaEnvelope />,
   },
   {
@@ -35,7 +35,7 @@ const services = [
       "Our reseller plans are designed for businesses and individuals who want to offer web hosting services while benefiting from all the resources and advantages of Genious Communications.",
     price: "299 Dhs ex.VAT",
     linkText: "Become a reseller",
-    link: "https://www.genious.net/en/company/authorized-partner",
+    link: "",
     icon: <BsBoxSeam />,
   },
   {
@@ -44,14 +44,14 @@ const services = [
       "Our managed services include full management, security, and maintenance of your infrastructure so you can focus on your core business with peace of mind and efficiency.",
     price: "8 Dhs ex.VAT",
     linkText: "See offers",
-    link: "https://www.genious.net/en/managed-services/system-administration",
+    link: "",
     icon: <FaClockRotateLeft />,
   },
 ];
 
 const AdditionalServices = () => {
   return (
-    <div className="max-w-7xl mx-auto px-12 py-16">
+    <div className="max-w-7xl mx-auto px-12 pb-9">
       {/* Heading */}
       <h2 className="text-center text-3xl md:text-4xl font-medium mb-12 mt-5">
         Additional services for individuals and professionals

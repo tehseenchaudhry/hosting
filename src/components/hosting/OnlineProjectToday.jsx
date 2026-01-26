@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link} from "react-router-dom";
 
 const OnlineProjectToday = () => {
   const [activeTab, setActiveTab] = useState("recommended");
@@ -50,12 +51,13 @@ const OnlineProjectToday = () => {
                 <p className="text-gray-600 mb-4">
                   Ideal for individuals and small businesses thanks to affordability and compatibility.
                 </p>
-                <a
-                  href="#"
+                
+                
+               <Link to='/hosting/linux-shared'
                   className="inline-flex items-center gap-2  bg-blue-500 px-10 py-4 rounded-lg hover:bg-black text-white transition"
                 >
                   View plans <FaArrowRight />
-                </a>
+                </Link>
               </div>
               <img
                 src="https://www.genious.net/themes/genious_theme/img/home/bento/linux.webp"
@@ -110,45 +112,85 @@ const OnlineProjectToday = () => {
         {/* ================= TAB 2 ================= */}
         {activeTab === "hosting" && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {[
-              {
-                title: "WordPress Hosting",
-                img: "https://www.genious.net/themes/genious_theme/img/home/bento/wordpress.webp",
-                desc: "Optimised for speed, performance and security.",
-                badge:"Best compatibility"
-              },
-              {
-                title: "E-commerce Hosting",
-                img: "https://www.genious.net/themes/genious_theme/img/home/bento/e-commerce.webp",
-                desc: "Launch your online store with peace of mind.",
-                badge:"Online Store"
-              },
-              {
-                title: "VPS Cloud Hosting",
-                img: "https://www.genious.net/themes/genious_theme/img/home/bento/vps.webp",
-                desc: "Dedicated power with cloud flexibility.",
-                badge:"Experience the Cloud"
-              },
-              {
-                title: "Dedicated Hosting",
-                img: "https://www.genious.net/themes/genious_theme/img/home/bento/dedicated.webp",
-                desc: "Perfect for high-traffic platforms.",
-                badge:"Full server control"
-              },
-            ].map((item, i) => (
-              <div key={i} className="bg-blue-100 rounded-2xl p- flex flex-col lg:flex-col items-center">
-                <img src={item.img} alt={item.title} className="w-full mb-12  " />
-                <div>
-                    <button className="bg-blue-200 text-blue-700 px-4 py-1 mb-3 rounded-2xl">{item.badge}</button>
-                  <h3 className="text-xl font-bold mb-2">{item.title}</h3>
-                  <p className="text-gray-600 mb-4">{item.desc}</p>
-                  <a className="inline-flex items-center gap-2  px-10 py-4 bg-blue-500 rounded-lg hover:bg-black text-white transition mb-5">
-                    View plans <FaArrowRight />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+      
+      {/* Card 1 */}
+      <div className="bg-blue-100 rounded-2xl p-6 flex flex-col items-center">
+        <img
+          src="https://www.genious.net/themes/genious_theme/img/home/bento/wordpress.webp"
+          alt="WordPress Hosting"
+          className="w-full mb-12"
+        />
+        <button className="bg-blue-200 text-blue-700 px-4 py-1 mb-3 rounded-2xl">
+          Best compatibility
+        </button>
+        <h3 className="text-xl font-bold mb-2">WordPress Hosting</h3>
+        <p className="text-gray-600 mb-4">
+          Optimised for speed, performance and security.
+        </p>
+        
+        <Link to='/hosting/wordpress' className="inline-flex items-center gap-2 px-10 py-4 bg-blue-500 rounded-lg hover:bg-black text-white transition mb-5">
+          View plans <FaArrowRight />
+        </Link>
+      </div>
+
+      {/* Card 2 */}
+      <div className="bg-blue-100 rounded-2xl p-6 flex flex-col items-center">
+        <img
+          src="https://www.genious.net/themes/genious_theme/img/home/bento/e-commerce.webp"
+          alt="E-commerce Hosting"
+          className="w-full mb-12"
+        />
+        <button className="bg-blue-200 text-blue-700 px-4 py-1 mb-3 rounded-2xl">
+          Online Store
+        </button>
+        <h3 className="text-xl font-bold mb-2">E-commerce Hosting</h3>
+        <p className="text-gray-600 mb-4">
+          Launch your online store with peace of mind.
+        </p>
+        <a className="inline-flex items-center gap-2 px-10 py-4 bg-blue-500 rounded-lg hover:bg-black text-white transition mb-5">
+          View plans <FaArrowRight />
+        </a>
+      </div>
+
+      {/* Card 3 */}
+      <div className="bg-blue-100 rounded-2xl p-6 flex flex-col items-center">
+        <img
+          src="https://www.genious.net/themes/genious_theme/img/home/bento/vps.webp"
+          alt="VPS Cloud Hosting"
+          className="w-full mb-12"
+        />
+        <button className="bg-blue-200 text-blue-700 px-4 py-1 mb-3 rounded-2xl">
+          Experience the Cloud
+        </button>
+        <h3 className="text-xl font-bold mb-2">VPS Cloud Hosting</h3>
+        <p className="text-gray-600 mb-4">
+          Dedicated power with cloud flexibility.
+        </p>
+        <a className="inline-flex items-center gap-2 px-10 py-4 bg-blue-500 rounded-lg hover:bg-black text-white transition mb-5">
+          View plans <FaArrowRight />
+        </a>
+      </div>
+
+      {/* Card 4 */}
+      <div className="bg-blue-100 rounded-2xl p-6 flex flex-col items-center">
+        <img
+          src="https://www.genious.net/themes/genious_theme/img/home/bento/dedicated.webp"
+          alt="Dedicated Hosting"
+          className="w-full mb-12"
+        />
+        <button className="bg-blue-200 text-blue-700 px-4 py-1 mb-3 rounded-2xl">
+          Full server control
+        </button>
+        <h3 className="text-xl font-bold mb-2">Dedicated Hosting</h3>
+        <p className="text-gray-600 mb-4">
+          Perfect for high-traffic platforms.
+        </p>
+        <Link to='/hosting/dedicated' className="inline-flex items-center gap-2 px-10 py-4 bg-blue-500 rounded-lg hover:bg-black text-white transition mb-5">
+          View plans <FaArrowRight />
+        </Link>
+      </div>
+
+    </div>
         )}
 
         {/* ================= TAB 3 ================= */}

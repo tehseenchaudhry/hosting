@@ -15,7 +15,7 @@ const cards = [
     features: ["ICANN Accredited", "ANRT Accredited", "Multiple extensions"],
     price: "12 Dhs ex.VAT",
     buttonText: "Register now",
-    link: "https://www.genious.net/en/domain-names",
+    link: "",
   },
   {
     title: "Web Hosting",
@@ -30,7 +30,7 @@ const cards = [
     features: ["SSD and NVMe drives", "99.99% uptime", "24/7 support"],
     price: "34 Dhs ex.VAT",
     buttonText: "Host my website",
-    link: "https://www.genious.net/en/hosting",
+    link: "",
   },
   {
     title: "SSL Certificates",
@@ -40,7 +40,7 @@ const cards = [
     features: ["Multiple levels", "Quick installation", "Support"],
     price: "8 Dhs ex.VAT",
     buttonText: "Secure my website",
-    link: "https://www.genious.net/en/ssl-certificates",
+    link: "",
   },
 ];
 

@@ -1,9 +1,9 @@
 import React from "react";
-import { FaAngleRight } from "react-icons/fa6"; // Arrow icon
+import { FaAngleRight } from "react-icons/fa6"; 
 
 const WebHostingMorocco = () => {
   return (
-    <div className="px-6 md:px-24 py-12 bg-[#0d1f47] text-white">
+    <div className="px-6 md:px-12 py-12 bg-[#0d1f47] text-white">
       <div className="max-w-7xl mx-auto">
 
         {/* Header */}
@@ -19,15 +19,15 @@ const WebHostingMorocco = () => {
           </div>
         </div>
 
-        <p className="border-b border-white mb-6 pb-3 text-xl">Go local, host your data in Morocco.</p>
+        <p className="border-b border-gay-300 mb-6 pb-3 text-xl">Go local, host your data in Morocco.</p>
 
         {/* Left Column */}
         <div className="lg:flex lg:gap-8 mb-8">
-          <div className="lg:w-1/3 flex flex-col h-full mb-6 lg:mb-0">
+          <div className="lg:w-1/3 flex flex-col h-full mb-6 lg:mb-0 ">
             <p className="font-semibold text-lg mb-4">Data proximity and sovereignty</p>
             <a
-              href="https://www.genious.net/en/hosting/hosting-morocco"
-              className="inline-flex items-center justify-center gap-2  py-4 w-50  text-lg font-semibold  bg-white text-[#0d1f47] transition rounded-xl"
+              href=""
+              className="inline-flex items-center justify-center gap-2  py-4 w-50  text-lg font-semibold  bg-white text-[#0d1f47] transition rounded-xl mt-5"
             >
               Host in Morocco <FaAngleRight className="mt-0.5" />
             </a>
@@ -52,7 +52,7 @@ const WebHostingMorocco = () => {
 
                 <div className="flex flex-col gap-2">
                   <a
-                    href="https://www.genious.net/en/hosting/housing-morocco"
+                    href=""
                     className="flex justify-between items-center font-semibold hover:pl-2 transition"
                   >
                     Colocation <FaAngleRight />
@@ -60,7 +60,7 @@ const WebHostingMorocco = () => {
                   <hr className="border-white" />
 
                   <a
-                    href="https://www.genious.net/en/hosting/shared-hosting-morocco"
+                    href=""
                     className="flex justify-between items-center font-semibold hover:pl-2 transition"
                   >
                     Shared Hosting <FaAngleRight />
@@ -68,7 +68,7 @@ const WebHostingMorocco = () => {
                   <hr className="border-white" />
 
                   <a
-                    href="https://www.genious.net/en/hosting/dedicated-servers-morocco"
+                    href=""
                     className="flex justify-between items-center font-semibold hover:pl-2 transition"
                   >
                     Dedicated <FaAngleRight />
@@ -76,7 +76,7 @@ const WebHostingMorocco = () => {
                   <hr className="border-white" />
 
                   <a
-                    href="https://www.genious.net/en/hosting/cloud-morocco"
+                    href=""
                     className="flex justify-between items-center font-semibold hover:pl-2 transition"
                   >
                     Cloud <FaAngleRight />
