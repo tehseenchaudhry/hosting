@@ -8,7 +8,6 @@ const AntiSpamHero = () => {
 
         <div className="grid lg:grid-cols-2 gap-20 items-center">
 
-          {/* LEFT IMAGE */}
           <div
             data-aos="fade-right"
             data-aos-duration="900"
