@@ -51,18 +51,26 @@ const NavbarMain = () => {
               Mail solutions
             </Link>
 
-            <button onMouseEnter={() => setOpenMenu("ssl")}>
+            <Link
+              to="/ssl"  // ✅ Path added
+              onMouseEnter={() => setOpenMenu("ssl")}
+            >
               SSL
-            </button>
+            </Link>
 
-            <button onMouseEnter={() => setOpenMenu("managed")}>
+            <Link
+              to="/managed-services"  // ✅ Path added
+              onMouseEnter={() => setOpenMenu("managed")}
+            >
               Managed Services
-            </button>
+            </Link>
 
-            {/* ✅ Company dropdown trigger */}
-            <button onMouseEnter={() => setOpenMenu("company")}>
+            <Link
+              to="/company"  // ✅ Path added
+              onMouseEnter={() => setOpenMenu("company")}
+            >
               Company
-            </button>
+            </Link>
 
           </nav>
         </div>
