@@ -74,7 +74,6 @@ const MailSolutionsDropDown = ({ closeMenu }) => {
           </ul>
         </div>
 
-        {/* CENTER CONTENT */}
         <div className="grid grid-cols-2 gap-8">
           {filtered.map(({ title, desc, path, icon: Icon }) => (
             <Link

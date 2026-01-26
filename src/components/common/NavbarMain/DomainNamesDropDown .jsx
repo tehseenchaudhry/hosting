@@ -102,7 +102,6 @@ const DomainNamesDropDown = ({ closeMenu }) => {
           ))}
         </div>
 
-        {/* ICANN */}
         <div className="px-10 py-12 border-l flex flex-col justify-center">
           <img src="/icann.png" alt="ICANN" className="w-20 mb-6" />
           <h4 className="text-2xl font-bold mb-4">Accredited Registrar</h4>
