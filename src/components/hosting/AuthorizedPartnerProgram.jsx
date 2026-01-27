@@ -6,7 +6,6 @@ import { FaAngleRight } from "react-icons/fa6";
 const AuthorizedPartnerProgram = () => {
   return (
     <div className=" border-b border-gray-800 py-20 px-12">
-      {/* Top Section */}
       <div className="container mx-auto">
         <div className="flex flex-col md:flex-row md:justify-between md:items-start gap-6">
           <div className="md:w-7/12">
