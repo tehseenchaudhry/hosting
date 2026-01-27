@@ -2,7 +2,7 @@ import hostingOffersImage from "../../assets/twice-slider.webp";
 
 const HostingOffers = () => {
   return (
-    <section className="bg-white w-full">
+    <section className="bg-white w-full ">
       <div className="max-w-[1440px] mx-auto px-6 lg:px-16 py-24">
 
         {/* HEADER */}
