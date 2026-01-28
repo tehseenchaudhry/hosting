@@ -7,7 +7,7 @@ const DOMAIN_SERVICES = [
     desc: "Check the availability of one or more domain names and register them instantly.",
     category: "INDIVIDUAL",
     path: "/domain-names/register",
-  },
+  }, 
   {
     title: "Transfer Domain Name",
     desc: "Transfer your domain to Genious and let our support manage the technical side.",
@@ -103,8 +103,9 @@ const DomainNamesDropDown = ({ closeMenu }) => {
         </div>
 
         {/* ICANN */}
-        <div className="px-10 py-12 border-l flex flex-col justify-center">
-          <img src="/icann.png" alt="ICANN" className="w-20 mb-6" />
+        <div className="px-10 py-12 border-l flex flex-col ">
+          <img src="https://www.genious.net/themes/genious_theme/img/ndd/logos/icann.svg
+" alt="ICANN" className="w-20 mb-6" />
           <h4 className="text-2xl font-bold mb-4">Accredited Registrar</h4>
           <p className="text-sm text-gray-600">
             Register or transfer your domain through an ICANN accredited registrar.

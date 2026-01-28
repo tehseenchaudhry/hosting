@@ -22,6 +22,14 @@ import Sectigo from "./pages/Sectigo";
 import Digicert from "./pages/Digicert";
 import GeoTrust from "./pages/GeoTrust";
 import Thawte from "./pages/Thawte";
+import DomainName from "./pages/DomainName";
+import RegisterDomainName from "./pages/RegisterDomainName";
+import TransferDomainName from "./pages/TransferDomainName";
+import DomainExtensions from "./pages/DomainExtensions";
+import BrandProtection from "./pages/BrandProtection";
+import DomainRetrieval from "./pages/DomainRetrieval";
+import DomainBrokerService from "./pages/DomainBrokerService";
+import DomainNameReseller from "./pages/DomainNameReseller";
 // import Home from "./pages/Home"; // optional if you create later
 
 function App() {
@@ -45,6 +53,16 @@ function App() {
           <Route path="hosting/wordpress" element={<WordPress />} />
           <Route path="hosting/multi-site" element={<Multi />} />
           <Route path="hosting/monentreprise" element={<Mon />} />
+
+
+          <Route path="domain-names" element={<DomainName/>}/>
+          <Route path="domain-names/register" element={<RegisterDomainName/>}/>
+          <Route path="domain-names/transfer"  element={<TransferDomainName/>}/>
+          <Route path="domain-names/extensions" element={<DomainExtensions/>}/>
+          <Route path="domain-names/brand-protection" element={<BrandProtection/>}/>
+          <Route path="domain-names/retrieval" element={<DomainRetrieval/>}/>
+          <Route path="domain-names/broker" element={<DomainBrokerService/>}/>
+          <Route path="domain-names/reseller" element={<DomainNameReseller/>}/>
 
           <Route path="/mail-solutions" element={<Mail />} />
           <Route path="mail-solutions/genious-mail" element={<Genious />} />

@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 const Footer = () => {
-  return (
+  return ( 
     <footer className="bg-gradient-to-b from-[#020c2b] to-[#010824] text-white">
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-3 gap-16">

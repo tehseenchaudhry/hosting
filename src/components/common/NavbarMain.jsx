@@ -36,13 +36,13 @@ const NavbarMain = () => {
             >
               Hosting
             </Link>
+            <Link to='/domain-names'
 
-            <button
               onMouseEnter={() => setOpenMenu("domains")}
               onClick={handleDomainClick}
             >
               Domain names
-            </button>
+            </Link>
 
             <Link
               to="/mail-solutions"
