@@ -9,7 +9,6 @@ const Layout = () => {
       <NavbarTop />
       <NavbarMain />
 
-      {/* MAIN CONTENT */}
       <main className="relative z-0">
         <Outlet />
       </main>

@@ -102,10 +102,15 @@ const DomainNamesDropDown = ({ closeMenu }) => {
           ))}
         </div>
 
+<<<<<<< HEAD
         {/* ICANN */}
         <div className="px-10 py-12 border-l flex flex-col ">
           <img src="https://www.genious.net/themes/genious_theme/img/ndd/logos/icann.svg
 " alt="ICANN" className="w-20 mb-6" />
+=======
+        <div className="px-10 py-12 border-l flex flex-col justify-center">
+          <img src="/icann.png" alt="ICANN" className="w-20 mb-6" />
+>>>>>>> 02bee7891ebf0f1313fadae70e9f68a1704271ac
           <h4 className="text-2xl font-bold mb-4">Accredited Registrar</h4>
           <p className="text-sm text-gray-600">
             Register or transfer your domain through an ICANN accredited registrar.
